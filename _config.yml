@@ -2,7 +2,7 @@
 #
 permalink:           pretty
 
-markdown:            redcarpet
+markdown:            kramdown
 
 # About/contact
 author:
