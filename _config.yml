@@ -33,3 +33,6 @@ gems: [jekyll-paginate]
 sass:
     sass_dir: _sass
     style: :compressed
+
+# Google Analytics
+ga:                  UA-86479860-1
