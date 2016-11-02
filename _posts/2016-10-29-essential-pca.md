@@ -25,7 +25,12 @@ given $$l \le r,$$ we want to find $$X_l \in \mathbb{R}^{n \times p}$$
 such that $$X_l$$ is the solution to the optimization problem
 
 $$
-\text{minimize}_L \quad || X - L ||_F^2 \quad \text{subject to rank}(L)\le l.
+\begin{align}
+& \underset{L \in \mathbb{R}^{n \times p}}{\text{minimize}}
+& & || X - L ||_F^2 \\
+& \text{subject to}
+& & \text{rank}(L) \le l.
+\end{align}
 $$
 
 As it happens, the solution to the above optimization problem will allow
