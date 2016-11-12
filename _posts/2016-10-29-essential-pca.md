@@ -11,13 +11,14 @@ represented by a data vector that measures $$p$$ features of some
 phenomenon. We can think of Principal Component Analysis (PCA) as trying
 to trying to solve two related problems.
 
-1. [*Compression*](#compression): How do we represent the data matrix $$X$$
-   succinctly? In other words, is there an efficient representation of
-   $$X$$ that uses less space while not sacrificing too much accuracy?
+<!--more-->
+
+1. [*Compression*](#compression): How do we
+   represent the data matrix $$X$$ succinctly? In other words, is there
+   an efficient representation of $$X$$ that uses less space while not
+   sacrificing too much accuracy?
 2. [*Prediction*](#prediction): Which (linear) combinations of the $$p$$
    features best explain or influence the data?
-
-<!--more-->
 
 Mathematically, the compression problem can be formulated as trying to
 identify a low rank approximation of $$X$$ that minimizes its [Frobenius
