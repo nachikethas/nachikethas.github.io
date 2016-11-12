@@ -4,17 +4,22 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
+ <!-- <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
+ -->
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+<!--     <a class="sidebar-nav-item{% if page.url == site.baseurl %}
+         active{% endif %}" href="{{ site.baseurl }}/">Home</a> -->
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
+
+<!-- Disable Automatic Generation of Sidebar Links -->
+    {% comment %}
 
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
@@ -25,8 +30,13 @@
       {% endif %}
     {% endfor %}
 
-    <!-- <a class="sidebar-nav-item" href="{{ site.author.surl }}">Google Scholar</a> -->
-    <!--     <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
+    {% endcomment %}
+
+    {% for link in site.slinks %}
+        <a class="sidebar-nav-item{% if page.url == link.url %} active{%
+        endif %}" href="{{ site.baseurl  }}{{ link.url  }}">{{ link.title
+        }}</a>
+    {% endfor %}
   </nav>
 
   <div class="sidebar-item">

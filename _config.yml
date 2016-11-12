@@ -20,14 +20,23 @@ urls:
 
 # Setup
 title:               Nachikethas A. Jagadeesan
-tagline:             ''
-description:         ''
+#tagline:             ''
+#description:         ''
 
-url:                 http://localhost:4000
-baseurl:             ''
+#url:                 http://www.nachikethas.com
+#baseurl:             ''
 paginate:            3
 paginate_path:       "page:num"
 excerpt_separator:   <!--more-->
+
+# Sidebar Links
+slinks:
+    - title: <i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home
+      url: /
+    - title: <i class="fa fa-user-circle fa-fw" aria-hidden="true"></i>&nbsp; About
+      url: /about/
+    - title: <i class="fa fa-tags fa-fw" aria-hidden="true"></i>&nbsp; Tags
+      url: /tags/
 
 gems: [jekyll-paginate]
 
