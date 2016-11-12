@@ -16,6 +16,8 @@ the costs of misclassifying an individual with $$Y = 1$$ and $$Y =
 -1$$ are $$a > 0$$ and $$b > 0$$, respectively. What's the Bayes
 decision rule?
 
+<!--more-->
+
 A classification rule, say $$g$$, is a function of $$\mathbf{X}$$
 taking values in $$\{-1, 1\}$$. We incur a loss when,
 

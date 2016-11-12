@@ -17,6 +17,8 @@ to trying to solve two related problems.
 2. [*Prediction*](#prediction): Which (linear) combinations of the $$p$$
    features best explain or influence the data?
 
+<!--more-->
+
 Mathematically, the compression problem can be formulated as trying to
 identify a low rank approximation of $$X$$ that minimizes its [Frobenius
 norm](https://en.wikipedia.org/wiki/Matrix_norm#Frobenius_norm). Assume
