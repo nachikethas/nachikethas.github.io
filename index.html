@@ -15,7 +15,7 @@ title: Home
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
 {{ post.excerpt | markdownify
-| remove: '<p>' | remove: '</p>' }} <a href="{{ site.url
+| remove: '<p>' | remove: '</p>' }} <a href="{{ site.baseurl
 }}{{ post.url  }}" title="Read more"><strong>Read more...</strong></a>
 
   </div>
