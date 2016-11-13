@@ -12,8 +12,7 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date"><i class="fa fa-calendar" title="Date
-    published"></i> {{ post.date | date_to_string }}</span>
+    <span class="post-date"><i class="fa fa-calendar" title="Date published"></i> {{ post.date | date_to_string }}</span>
 
     {{ post.excerpt | markdownify
     | remove: '<p>' | remove: '</p>' }} <a href="{{ site.baseurl
