@@ -64,6 +64,7 @@ theorem](http://link.springer.com/article/10.1007%2FBF02288367) tells us
 that $$ X_l $$ minimizes the squared Frobenius norm $$ || X - L ||_F^2
 $$ among all matrices $$L$$ with rank less than or equal to $$l$$.
 Moreover, we know that the following properties hold:
+
 * $$X_l$$ is unique if and only if $$\sigma_l > \sigma_{l-1}$$.
 * The minimum is given by $$\sum_{i = l+1}^r \sigma_i^2$$.
 
