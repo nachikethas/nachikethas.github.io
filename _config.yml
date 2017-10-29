@@ -38,7 +38,8 @@ slinks:
     - title: <i class="fa fa-tags fa-fw" aria-hidden="true"></i>&nbsp; Tags
       url: /tags/
 
-gems: [jekyll-paginate]
+plugins:
+    - jekyll-paginate
 
 sass:
     sass_dir: _sass
